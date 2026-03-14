@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&family=Big+Shoulders+Display:wght@800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Big Shoulders Display", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-primary: #8B5E3C;
+  --color-secondary: #D4A373;
+  --color-cream: #F5EFE6;
+  --color-coffee-dark: #2C1E1A;
+  --color-bg-dark: #1A1412;
+  --color-bg-header: #E5D7C6;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-cream text-coffee-dark;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #2C1E1A 0%, #1A1412 100%);
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
